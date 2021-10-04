@@ -2,15 +2,15 @@
 
 // set up ======================================================================
 // get all the tools we need
-const express  = require('express');
-const app      = express();
-const port     = process.env.PORT || 8080;
-const MongoClient = require('mongodb').MongoClient
-const mongoose = require('mongoose');
+const express  = require('express'); //declaring express npm
+const app      = express(); //declaring a variable that references the method with express
+const port     = process.env.PORT || 8080; //port variable will be env port or port 8080
+const MongoClient = require('mongodb').MongoClient //declaring MongoDB npm
+const mongoose = require('mongoose'); //declaring mongoose 
 const passport = require('passport');
 const flash    = require('connect-flash');
-const ObjectId = require('mongodb').ObjectId
-const multer = require('multer')
+const ObjectId = require('mongodb').ObjectId //allow us to target ObjectId within MongoDB
+const multer = require('multer') //allow to upload images
 
 const morgan       = require('morgan');
 const cookieParser = require('cookie-parser');
