@@ -1,0 +1,67 @@
+body{
+    background-color: hsl(216,93%,80%);
+    background-image: radial-gradient(
+      650px circle at 0% 0%,
+    hsl(216, 93%, 85%) 15%,
+    hsl(216, 93%, 80%) 35%,
+    hsl(216, 93%, 75%) 75%,
+    hsl(216, 93%, 74%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+    hsl(228, 92%, 85%) 15%,
+    hsl(216, 93%, 90%) 35%,
+    hsl(216, 93%, 80%) 75%,
+    hsl(216, 93%, 79%) 80%,
+      transparent 100%
+    );
+  }
+  
+  h1{
+    color: hsl(219,42%,1%);
+  }
+  h5{
+    color: hsl(219,42%,1%);
+  }
+  p{
+    color: hsl(219,42%,1%);
+  }
+  
+  .btn{
+    border-radius: 20px;
+  }
+  
+  #card-custom{
+    width: 350px;
+    height: 500px;
+    background: hsla(0, 0%, 100%, 0.15);
+    backdrop-filter: blur(30px);
+  }
+  
+  .fade{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    padding: auto;
+    animation-name: fade-in;
+  }
+  
+  .animation-delay-small{
+    animation-delay: 0.15s;
+  }
+  .animation-delay-medium{
+    animation-delay: 0.3s;
+  }
+  .animation-delay-large{
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes fadein {
+    0%{
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
