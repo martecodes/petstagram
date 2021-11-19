@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap');
+
 body{
     background-color: hsl(216,93%,80%);
     background-image: radial-gradient(
@@ -19,6 +21,8 @@ body{
   }
   
   h1{
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
     color: hsl(219,42%,1%);
   }
   h5{

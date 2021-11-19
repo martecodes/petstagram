@@ -4,7 +4,7 @@ Array.from(likes).forEach(function (element) {
   element.addEventListener('click', function () {
     const id = this.parentNode.parentNode.parentNode.childNodes[1].innerText.trim('\n')
     const likes = parseFloat(this.parentNode.parentNode.childNodes[1].innerText)
-
+    console.log(id,likes);
     fetch('postLikes', {
       method: 'put',
       headers: { 'Content-Type': 'application/json' },
@@ -22,13 +22,4 @@ Array.from(likes).forEach(function (element) {
       })
   });
 });
-
-// const myModal = document.getElementById('exampleModal')
-// const myInput = document.getElementsByClassName('modal-dialog')
-
-// myModal.addEventListener('shown.bs.modal', function () {
-//   myInput.focus()
-// })
-
-
 

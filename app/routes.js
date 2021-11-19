@@ -171,8 +171,8 @@ app.post('/makePost', upload.single('file-to-upload'), (req, res) => {
   });
 
     app.delete('/commentDelete', (req, res) => {
-    
       db.collection('comments').findOneAndDelete({
+        commentBy: req.user.local.username,
         _id: ObjectId(req.body._id), 
         comment: req.body.comment
       }, (err, result) => {

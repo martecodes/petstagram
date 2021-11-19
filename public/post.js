@@ -54,6 +54,7 @@ Array.from(postLikes).forEach(function (element) {
     element.addEventListener('click', function () {
       const id = this.parentNode.parentNode.childNodes[5].innerText.trim("\n")
       const comment = this.parentNode.parentNode.childNodes[9].innerText.trim()
+
     
       fetch('/commentDelete', {
         method: 'delete',
