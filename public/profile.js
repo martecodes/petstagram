@@ -2,7 +2,8 @@ const trash = document.getElementsByClassName("fa-trash-alt")
 
 Array.from(trash).forEach(function (element) {
     element.addEventListener('click', function () {
-        const id = this.parentNode.parentNode.childNodes[3].innerText.trim("\n")
+        const id = this.parentNode.parentNode.childNodes[1].innerText.trim("\n")
+        console.log(id);
 
         fetch('/postDelete', {
             method: 'delete',
