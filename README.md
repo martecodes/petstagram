@@ -1,3 +1,3 @@
 # Pets-gram
 
-Group project 
+Group project (Jean, Ernest, Yannick, Tyle)
